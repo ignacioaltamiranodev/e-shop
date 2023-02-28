@@ -1,6 +1,5 @@
 import NoResults from '@/components/NoResults';
 import Product from '@/components/Product';
-import { useCart } from '@/context/cartContext';
 import { products } from '@/data/data';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -8,11 +7,6 @@ import React, { useState } from 'react';
 const ProductsPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortedData, setSortedData] = useState(products);
-  const { addItemToCart } = useCart();
-
-  const addToCart = (item) => {
-    addItemToCart(item);
-  };
 
   const filteredProducts = sortedData.filter((product) =>
     product.title.toLowerCase().includes(searchTerm)

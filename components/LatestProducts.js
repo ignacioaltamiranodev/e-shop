@@ -1,4 +1,4 @@
-import { gridInfo, highlight, products } from '@/data/data';
+import { gridInfo, products } from '@/data/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import Product from './Product';

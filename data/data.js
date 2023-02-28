@@ -1,6 +1,3 @@
-// import hightlightImg from '../public/hightlightimg.png';
-import sneakerShoe from '../public/sneaker.png';
-
 import product1 from '../public/product1.png';
 import product2 from '../public/product2.png';
 import product3 from '../public/product3.png';
