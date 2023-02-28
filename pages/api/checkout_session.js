@@ -24,8 +24,8 @@ export default async function handler(req, res) {
         ],
         billing_address_collection: 'auto',
         line_items: transformedItems,
-        success_url: `https://eshop-alta.vercel.app/success`,
-        cancel_url: `https://eshop-alta.vercel.app/canceled`,
+        success_url: `https://e-shop-alta.vercel.app/success`,
+        cancel_url: `https://e-shop-alta.vercel.app/canceled`,
         metadata: {
           email,
         },
