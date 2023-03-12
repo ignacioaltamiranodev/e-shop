@@ -18,18 +18,20 @@ const Navbar = () => {
           e-shop
         </Link>
         <SearchInput />
-        <div className="d-flex align-items-center text-white position-relative">
-          <BiShoppingBag
-            className="icon fs-4"
-            onClick={() => setShowModal(true)}
-          />
-          {items?.length >= 1 && (
-            <span className="primary-bg rounded px-1 items-count">
-              {items?.length}
-            </span>
-          )}
+        <div className="d-flex align-items-center text-white me-sm-0 me-3">
+          <div className="position-relative">
+            <BiShoppingBag
+              className="icon fs-4"
+              onClick={() => setShowModal(true)}
+            />
+            {items?.length >= 1 && (
+              <span className="primary-bg rounded px-1 items-count">
+                {items?.length}
+              </span>
+            )}
+          </div>
           {!user ? (
-            <>
+            <div className="d-md-block d-none">
               <Link
                 className={
                   items.length >= 1
@@ -43,22 +45,22 @@ const Navbar = () => {
               <Link className="btn p-2 black-bg" href="/signup">
                 Sign In
               </Link>
-            </>
+            </div>
           ) : (
             <>
               <span
                 className={
                   items.length >= 1
-                    ? 'ms-4 d-none d-md-inline-block'
-                    : 'ms-3 me-3 d-none d-md-inline-block'
+                    ? 'ms-4 -none -md-inline-block'
+                    : 'ms-3 me-3 -none -md-inline-block'
                 }
               >
                 {user?.displayName || user?.email?.split('@', 1)[0]}
               </span>
               <button
-                className={
+                className={` ${
                   items.length >= 1 ? 'btn black-bg ms-4' : 'btn black-bg ms-2'
-                }
+                } d-md-block d-none`}
                 onClick={() => {
                   logOut();
                   clearCart();

@@ -20,11 +20,6 @@ import product19 from '../public/product19.png';
 import product20 from '../public/product20.png';
 import product21 from '../public/product21.png';
 import product22 from '../public/product22.png';
-// import product22 from '../public/product22.png';
-// import product23 from '../public/product23.png';
-// import product24 from '../public/product24.png';
-// import product25 from '../public/product25.png';
-// import product26 from '../public/product26.png';
 
 import gridImg1 from '../public/grid-img-1.jpg';
 import gridImg2 from '../public/grid-img-2.jpg';

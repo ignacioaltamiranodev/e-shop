@@ -9,7 +9,7 @@ const ProductsPage = () => {
   const [sortedData, setSortedData] = useState(products);
 
   const filteredProducts = sortedData.filter((product) =>
-    product.title.toLowerCase().includes(searchTerm)
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const handleSelectChange = (e) => {

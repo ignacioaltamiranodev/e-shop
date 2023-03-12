@@ -29,15 +29,13 @@ const Hero = () => {
                 Shop Now
               </Link>
             </div>
-            <div className="position-absolut hero-image">
+            <div className="hero-image">
               <Image
                 src={item.img}
                 width="0"
                 height="0"
-                // width={600}
-                // height={600}
                 style={{ width: '90%', height: 'auto' }}
-                alt={'Hero Image'}
+                alt={item.title}
               />
             </div>
           </SwiperSlide>

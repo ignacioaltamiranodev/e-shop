@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="row mx-auto p-4">
       <div className="col-md-3 d-flex flex-column align-items-center mx-auto">
-        <h3>About Nike</h3>
+        <h3>About Us</h3>
         <a className="my-2">News</a>
         <a className="mb-2">Careers</a>
         <a className="mb-2">Investors</a>

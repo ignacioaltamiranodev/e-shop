@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from '@/context/authContext';
 import { CartProvider } from '@/context/cartContext';
 import { Roboto } from '@next/font/google';
+import HamburgerMenu from '@/components/HamburgerMenu';
 
 const pageVariant = {
   pageInitial: { opacity: 0 },
@@ -47,6 +48,7 @@ export default function App({
           <Navbar />
           {loading ? <Loader /> : <Component {...pageProps} />}
           <Footer />
+          <HamburgerMenu />
         </motion.div>
         <ToastContainer
           position="top-center"
